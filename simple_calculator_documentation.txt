@@ -1,0 +1,24 @@
+
+This program is a basic calculator that allows users to perform simple mathematical operations such as addition, subtraction, multiplication, division, and exponentiation. It is designed to be user-friendly and intuitive, with a menu system that guides the user through the different options and operations.
+
+The program starts by importing necessary modules such as logging, exception, re, and statistics. These modules will be used for error handling and performing operations.
+
+The main function of the program is the "calculator" function. This function acts as the main menu and allows the user to choose which operation they would like to perform. It also contains a try-except block to handle any invalid inputs from the user.
+
+When the user enters "m" or "M" in the menu, they will be presented with a list of operations they can choose from. Each operation is represented by a letter, such as "a" for addition, "s" for subtraction, etc.
+
+The program then uses helper functions to perform the chosen operation. These functions include "add", "subtract", "multiply", "division", and "exponentt". Each function uses a try-except block to handle any invalid inputs and provides the user with the option to perform the operation again or return to the main menu.
+
+The "add" function prompts the user to enter two numbers and then performs addition on them. It also gives the user the option to perform the operation again or return to the main menu.
+
+The "subtract" function works similarly to the "add" function but performs subtraction instead.
+
+The "multiply" function prompts the user to enter two numbers and then performs multiplication on them. It also gives the user the option to perform the operation again or return to the main menu.
+
+The "division" function prompts the user to enter a dividend and a divisor and then performs division on them. It also gives the user the option to perform the operation again or return to the main menu.
+
+The "exponentt" function prompts the user to enter a base and an exponent and then performs exponentiation on them. It also gives the user the option to perform the operation again or return to the main menu.
+
+The "main" function calls the "calculator" function to start the program. This function can be called again at any time to perform another operation.
+
+In conclusion, this calculator program is a simple but useful tool for performing basic mathematical operations. It is designed to be user-friendly and allows for easy navigation through the different operations. Developers can refer to this code for understanding how to create a menu system, handle invalid inputs, and perform basic mathematical operations using helper functions.

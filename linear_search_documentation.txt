@@ -1,0 +1,61 @@
+
+Program Name: Linear Search
+
+Description:
+This program implements the linear search algorithm to find a specific target element in a given list. Linear search is a simple search algorithm that sequentially checks each element of the list until the target element is found or the end of the list is reached. It is a brute force approach and is suitable for small lists or unsorted lists.
+
+Functionality:
+The program takes in a list and a target element as inputs and searches for the target element in the list. If the element is found, the program returns the element. Otherwise, it returns None.
+
+Algorithm:
+1. Start the linear search function with two parameters: list and target.
+2. Use a for loop to iterate through each element of the list.
+3. Inside the loop, check if the current element is equal to the target element.
+4. If it is, return the element.
+5. If the loop finishes without finding the target element, return None.
+6. Define the main function.
+7. Create a list with some elements.
+8. Call the linear search function with the list and the target element as parameters.
+9. Print the result.
+
+Example:
+Input:
+List: [1, 245, 5, 6, 7, 2, 5]
+Target: 5
+
+Output:
+5
+
+Code:
+
+# Function to implement linear search
+def linear_search(list, target):
+    # Loop through the list
+    for i in range(len(list)-1):
+        # Check if the current element is equal to the target
+        if list[i] == target:
+            # If yes, return the element
+            return list[i]
+    # If the target is not found, return None
+    return None
+
+# Main function
+def main():
+    # Create a list
+    lst = [1, 245, 5, 6, 7, 2, 5]
+    # Call the linear search function and print the result
+    print(linear_search(lst, 5))
+
+# Call the main function
+main()
+
+Complexity:
+The time complexity of linear search is O(n) in the worst case, where n is the size of the list. This is because the program may have to iterate through the entire list to find the target element. The space complexity is O(1) as the program only uses a fixed amount of memory to store the list and target element.
+
+Possible Improvements:
+1. The program can be modified to handle duplicate target elements.
+2. The input list can be sorted before performing linear search to improve efficiency.
+3. A more efficient search algorithm such as binary search can be implemented for larger lists.
+
+Conclusion:
+The linear search algorithm is a simple yet effective approach to find a target element in a list. It is easy to implement and suitable for small or unsorted lists. However, for larger lists, more efficient search algorithms should be used. 

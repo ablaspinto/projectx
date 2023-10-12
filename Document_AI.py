@@ -14,7 +14,7 @@ def get_info(filename):
             pre_prompt += lines
     response = openai.Completion.create(
         model= "gpt-3.5-turbo-instruct",
-        prompt="Can you descripe this program in detail and in proper documentation for developers reading the code " + pre_prompt ,
+        prompt="Can you descripe this program in detail and in proper documentation for developers reading the code\n " + pre_prompt ,
         temperature=.6,
         max_tokens=1000
     )
@@ -35,8 +35,8 @@ def ouput_file(filename,name):
 
 def main():
     #filename = input("enter a file ")
-    filename = "first_project.py"
-    name = "first_project_documentation"
+    filename = "linear_search.py"
+    name = "linear_search_documentation"
     ouput_file(filename,name)
 main()
 
