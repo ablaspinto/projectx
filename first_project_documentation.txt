@@ -1,0 +1,53 @@
+
+
+Documentation:
+
+Program Name: Guessing Game
+
+Description:
+This program is a simple guessing game that prompts the user to guess a number between 1 and 9. The program will generate a random number between 1 and 10 and the user has three chances to guess the correct number. If the user guesses the correct number, they will receive a congratulatory message. If the user runs out of chances, they will receive a "Game Over" message.
+
+Functions:
+1. guessing_game(target): This function takes in a parameter "target" which is the randomly generated number. It uses a while loop to prompt the user for their guess and compares it to the target number. If the guess is correct, the function will return a congratulatory message. If the guess is too low or too high, the function will inform the user and increase the counter by 1. The function will continue to run until the user runs out of chances or guesses the correct number.
+
+2. main(): This function is the main driver of the program. It calls the guessing_game function and passes in a randomly generated number between 1 and 10 as the "target" parameter.
+
+Variables:
+1. target: This variable stores the randomly generated number between 1 and 10.
+
+2. counter: This variable keeps track of the number of guesses the user has made.
+
+3. user: This variable stores the user's guess input.
+
+Algorithm:
+1. Import the random module.
+2. Define the guessing_game function with a parameter "target".
+3. Initialize the counter variable to 0.
+4. Use a while loop to run the game until the user runs out of chances or guesses the correct number.
+5. Use another while loop to prompt the user for their guess.
+6. Compare the user's guess to the target number.
+7. If the guess is correct, return a congratulatory message.
+8. If the guess is too low or too high, inform the user and increase the counter by 1.
+9. If the user runs out of chances, return a "Game Over" message.
+10. Define the main function.
+11. Generate a random number between 1 and 10 and store it in the target variable.
+12. Call the guessing_game function and pass in the target variable.
+13. Call the main function to start the game.
+
+Sample Output:
+Enter a guess from 1-9: 5
+You guessed too low
+Enter a guess from 1-9: 8
+You guessed too high
+Enter a guess from 1-9: 7
+CONGRATS YOU ARE RIGHT!
+
+OR
+
+Enter a guess from 1-9: 2
+You guessed too low
+Enter a guess from 1-9: 1
+You guessed too low
+Enter a guess from 1-9: 4
+You guessed too low
+Game Over Sorry :(
